@@ -1,64 +1,46 @@
-# defi-timelock-wallet
+# SonicSentinel - AI-Powered Asset Guardian for DeFi
 
-A secure, time-based asset distribution system built for Web3 applications.
+SonicSentinel is an innovative DeFi solution that uses AI to protect user assets against market volatility and potential risks.
 
-## Overview
-This smart contract system enables time-locked asset distribution with the following features:
-- Secure fund locking mechanism
-- Time-based release conditions
-- Multiple beneficiary support
-- Automatic asset distribution
+## Features
 
-## Key Features
-- **Time-Lock Mechanism**: Assets are locked until a specified block height
-- **Beneficiary Management**: Support for multiple beneficiaries with equal share distribution
-- **Ownership Controls**: Clear separation between contract owner and beneficiary rights
-- **Automated Distribution**: Smart distribution system dividing assets among beneficiaries
+- AI-powered risk assessment of market conditions
+- Automated protection mechanisms for user assets
+- Smart contract vaults with customizable protection parameters
+- Real-time monitoring of market and social sentiment signals
 
-## Contract Architecture
-The system consists of two main contracts:
-1. `timelocked-wallet`: Manages the locking and release conditions
-2. `smart-claimant`: Handles the distribution logic for multiple beneficiaries
+## Project Components
 
-## Functions
-### Timelocked Wallet
-- `lock`: Secures assets with time-based conditions
-- `bestow`: Transfers beneficiary rights
-- `claim`: Releases assets when conditions are met
+1. **Frontend**: Web interface for users to interact with their vaults
+2. **Backend**: Python-based AI system for risk assessment and protection
+3. **Smart Contract**: Secure vaults on the blockchain with protection mechanisms
 
-### Smart Claimant
-- `claim`: Executes the distribution logic among beneficiaries
-
-## Security Features
-- Owner-only access controls
-- Time-lock validation
-- Balance checks
-- Error handling for invalid operations
-
-## Use Cases
-- Treasury management
-- Vesting schedules
-- Trust fund distribution
-- Decentralized inheritance
-- Payment scheduling
-
-## Getting Started
+## Setup Instructions
 
 ### Prerequisites
-- Node.js installed
-- Git installed
-- Clarinet installed for contract deployment
-- Basic knowledge of smart contracts
+- Node.js
+- Python 3.7+
+- A Sonic-compatible wallet
 
+### Frontend Setup
+1. Navigate to the `frontend` directory
+2. Open `index.html` in a web browser, or serve with a local web server
 
-1. Deploy `timelocked-wallet` contract
-2. Deploy `smart-claimant` contract
-3. Lock assets using owner account
-4. Wait for unlock height
-5. Execute claim function
+### Backend Setup
+1. Navigate to the `backend` directory
+2. Install dependencies: `pip install -r requirements.txt`
+3. Run the API server: `python api.py`
 
-## Security Considerations
-- All functions include proper access controls
-- Time conditions are strictly enforced
-- Balance validation before transfers
-- Protected against common attack vectors
+### Smart Contract
+1. Deploy the SonicSentinel smart contract to your desired network
+2. Update the contract address in `frontend/index.html`
+
+## Usage
+
+1. Connect your wallet to SonicSentinel
+2. Create protected vaults for your assets
+3. The AI system will automatically monitor market conditions
+4. When risky conditions are detected, protection mechanisms activate
+
+## Built For
+Sonic DeFAI Hackathon 2025
