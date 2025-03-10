@@ -1,0 +1,7 @@
+{
+    "network": {
+      "testnet": {
+        "url": "https://stacks-node-api.testnet.stacks.co"
+      }
+    }
+  }
